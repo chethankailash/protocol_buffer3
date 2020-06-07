@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option go_package = "enumpb";
+
+enum DayOfWeek {
+    UNDEFINED = 0;
+    SUNDAY = 1;
+    MONDAY = 2;
+    TUESDAY = 3;
+    WEDNESDAY = 4;
+    THURSDAY = 5;
+    FRIDAY = 6;
+    SATURDAY = 7;
+}
+
+
+message EnumMessage{
+    // DayOfWeek is enum and defined above 
+    int32 id = 1;
+    DayOfWeek day = 2;
+}
